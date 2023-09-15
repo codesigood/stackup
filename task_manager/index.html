@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Task Manager</title>
+        <link rel="stylesheet" href="./index.css">
+        <script src="./index.js" defer></script>
+    </head>
+    <body>
+        <div id="container">
+                <div id="add-task-container">
+                    <select id="category">
+                        <option value="adventure">Adventure</option>
+                        <option value="nightmere">Nightmere</option>
+                        <option value="fantacy">Fantacy</option>
+                    </select>
+                    <label for="title-input"> Title:</label>
+                    <input type="text" placeholder="Enter title of task" id="title-input">
+                    <label for="desc-input"> Description:</label>
+                    <textarea cols="33"  rows="12" id="desc-input">
+                       
+                    </textarea>
+                    <button type="button" id="submit">Submit task</button>
+                </div>
+                <div id="task-list-container">
+                   <table id="myTable">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Category</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="result">
+                           
+                        </tbody>
+                   </table>
+                </div>
+        </div>
+
+    </body>
+</html>
